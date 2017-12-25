@@ -1,0 +1,77 @@
+body{
+  background-color: black;
+}
+.hed{
+  width: 100px;
+  height: 100%;
+  overflow: hidden;
+  
+  top: 0;
+  margin-left: -80px;
+}
+
+.transbox{
+  width: 80px;
+  height: 100%;
+  border-right: solid;
+  border-width: 2px;
+  border-color:  white;
+  border-radius: 10px;
+}
+.logoo {
+    width: 55px;
+    height: 56px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-left: 10px; 
+    animation: roll 8s infinite;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.nomx{
+  width: 80px;
+  height: 40px;
+  float: left;
+  color: white;
+  line-height: 50px;
+  text-align: center;
+  font-size: 11;
+  font-family: arial;
+}
+.purple{
+  width: 80px;
+  height: 40px;
+  background-color: transparent;
+  color: white;
+  line-height: 50px;
+  text-align: center;
+  font-size: 11;
+  font-family: arial;
+  border:none;
+
+}
+.purple:hover{
+  border-bottom: solid;
+  border-width: 2px;
+  border-color: red;
+  color:red;
+}
+.nomx1{
+  width: 120px;
+  height: 40px;
+  float: left;
+  color: white;
+  line-height: 50px;
+  text-align: center;
+  font-size: 18;
+  font-family: arial;
+  font-weight: bolder;
+}

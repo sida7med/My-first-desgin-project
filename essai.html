@@ -1,0 +1,181 @@
+<html>
+<head>
+  <title>Square network</title>
+  <link rel="stylesheet" type="text/css" href="squaretv.css">
+  <script type="text/javascript" src="jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="reset.css">
+</head>
+<body>
+   <div class="hed">
+  <ul class="transbox">
+        <LI class="nomx1"></LI>
+        <LI class="nomx1"></LI>
+      <LI class="nomx1"><div class="logoo"><img src="logored.png" width="55" height="56"></div></LI>
+      <LI class="nomx1"></LI>
+      <LI class="nomx1"></LI>
+      <LI class="nomx1"></LI>
+      <LI class="nomx"><button class="purple">ABOUT</button></LI>
+      <LI class="nomx"><button class="purple">SERVICE</button></LI>
+      <LI class="nomx"><button class="purple">WORK</button></LI>
+      <LI class="nomx"><button class="purple">BLOG</button></LI>
+      <LI class="nomx"><button class="purple">CONTACT</button></LI>
+      </ul>
+   </div>    
+<div class="slider">
+  <div class="i">
+      <video poster="pposter.png" autoplay="true" loop>
+      <source src="qbg.mp4" type="video/mp4">
+    </video>
+    </div>
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="texto11">creative square studios</div>
+    <div class="texto1"><font face="times"><b><b><strong> WELCOME TO SQUARE </strong></b></b></font>
+    </div>
+    <button class="learn">LEARN MORE</button>
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="pic3.png" style="width:100%" height="500px">
+    <button class="catch">Catch up</button>
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="p4.jpg" style="width:100%" height="500px">
+    <button class="catch">Catch up</button>
+    <div class="text"></div>
+  </div>
+
+
+  <br>
+
+  <div id="bot" style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+</div>
+<div class="box2">
+  <div class="o4">
+    <div class="texto2">
+       Most praised </br>
+      <font face="times"><b><b> Critics choice </b></b></font>
+    </div>
+  </div>  
+  <div class="news1">
+    
+    <div class="pic1">
+      <img src="pic2.jpg" width="300px" height="400px">
+    </div>
+    <div class="pic2">
+      <img src="sco.jpg" width="300px" height="400px">
+    </div>
+    <div class="pic3">
+      <img src="htg.jpg" width="300px" height="400px">
+    </div>
+
+   </div> 
+  <div class="news2">
+   <div class="comment1">" Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. "<br><font font-family="myFont" color="black">----------------------------John doe</font></div>
+  <div class="comment2">" Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. "<br><font font-family="myFont" color="black">----------------------------John doe</font></div>
+  <div class="comment3">" Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. "<br><font font-family="myFont" color="black">----------------------------John doe</font></div>
+  </div>   
+   
+</div>
+<div class="barx">
+  <marquee direction="left">
+    <div class="scroll" width="1500" height="200">
+      <div class="quoat">
+        <img src="rs.jpg" width="445"  height="200" >
+      </div>
+      <div class="quoat">
+        <img src="gs.jpg" width="445"  height="200" >
+      </div>
+      <div class="quoat">
+        <img src="os.jpg" width="445"  height="200" >
+      </div>
+      <div class="quoat">
+        <img src="gs.jpg" width="445"  height="200" >
+      </div>
+    </div>
+  </marquee> 
+</div>
+
+<script>
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 15000); // Change image every 5 seconds
+}
+$(document).ready(function(){
+  $('.texto1').delay(1000).show(3000);
+  $('.texto11').delay(2000).show(3000);
+  $(".catch").fadeIn(3000);
+  $(".box2").mouseenter(function(){
+    $(".pic1").show(2000);
+    $(".pic2").show(3000);
+    $(".pic3").show(4000);
+    
+  });
+  $(".pic1").click(function(){
+      $(".comment1").slideDown(2000);
+      $(".comment2").hide();
+      $(".comment3").hide();
+    });
+  $(".pic2").click(function(){
+      $(".comment2").slideDown(2000);
+      $(".comment1").hide();
+      $(".comment3").hide();
+    });
+  $(".pic3").click(function(){
+      $(".comment3").slideDown(2000);
+      $(".comment2").hide();
+      $(".comment1").hide();
+    });
+  $(".hed").mouseenter(function(){
+  $(".hed").animate({"margin-left":"0px"},"slow");
+      
+  });
+  $(".hed").mouseleave(function(){
+  $(".hed").animate({"margin-left":"-80px"},"slow");
+  });
+  $(".box2").mouseenter(function(){
+  $(".texto2").animate({width:"100%",height:"100px","margin-left":"0px"},"2000");
+  $(".texto2").animate({width:"300px",height:"100px","margin-left":"450px"},"4000");
+      
+  });
+   
+});
+</script>
+</body>
+</html>

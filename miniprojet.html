@@ -1,0 +1,61 @@
+<html>
+<head>
+	<title>project</title>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="miniprojet.css">
+	<link rel="stylesheet" type="text/css" href="squaretv.css">
+	<script type="text/javascript" src="jquery.js"></script>
+</head>
+<body>
+	
+<div class="slide">
+			
+</div>
+<div class="ver">
+	<div id="im">	
+		<video autoplay="true" width="1500px" height="1200px" loop>
+			<source src="rain.mp4" type="video/mp4" >
+		</video>
+	</div>
+	<div class="studio">
+		Square studios presents
+	</div>
+	<div class="logo">
+		<div class="log"><img src="logored.png"></div>
+		<div class="tv">TV</div>
+		<div class="movie">
+			<img src="logotvm.png" width="100" height="110">
+		</div>
+		<div class="movie1">
+			<img src="logos.png" width="100" height="110">
+		</div>
+		<div class="movie2">
+			<img src="logoF.png" width="100" height="110">
+		</div>
+	</div>
+
+	<button class="btn1"><a href="squaretv.html"> <b>>></b>  </a></button>
+</div>
+<script>
+	$(".logo").hide();
+	$(document).ready(function(){
+		$(".studio").fadeIn(2000);
+		$(".studio").hide(1500);
+		$(".logo").delay(2000).fadeIn(2000);
+		$(".movie").delay(3000).show(2000);
+		$(".movie1").delay(3000).show(2000);
+		$(".movie2").delay(3000).show(2000);
+		$(".btn1").delay(4000).show(2000);
+
+		for (var i = 0; i <= 100; i++) {
+			$(".btn1").fadeOut(500);
+		$(".btn1").fadeIn(500);
+		};
+		$(".btn1").click(function(){
+			console.log("button clicked");
+			$(".ver").fadeOut();
+		});
+	});
+	</script>
+</body>
+</html>

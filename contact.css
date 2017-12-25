@@ -1,0 +1,226 @@
+
+.sheet{
+	width: 100%;
+	height: 650px;
+	background:url(2.jpg);
+	background-size: 100% 650px;
+	position: absolute;
+}
+.tete{
+	width: 180px;
+	height: 650px;
+	float: left;
+	margin-left: 40px;
+	overflow: hidden;
+}
+.q{
+	width: 180px;
+	height: 250px;
+}
+.t{
+	width: 180px;
+	height: 250px;
+}
+.cover{
+	width: 100%;
+	height: 650px;
+	background-color: #58C9B9;
+	opacity: 0.4;
+	position: relative;
+	border-bottom: solid;
+	border-width: 10px;
+	border-color: #2EC4B6;
+}
+.titre1{
+	width: 100%;
+	height: 200px;
+	position: relative;
+	top: -400px;
+	background-color: black;
+	opacity: 0.4;
+	background-size: 100% 650px;
+	border-top:solid;
+	border-bottom:solid;
+	border-width: 10px;
+	border-color: white;
+}
+.titre{
+	width: 100%;
+	height: 200px;
+	position: relative;
+	top: -580px;
+	background:transparent;
+	font-size: 110;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+}
+
+.fo{
+	width: 700px;
+	height: 740px;
+	margin-left: 200px;
+	margin-top: -400px;
+	padding: 50px;
+	line-height: 20px;
+	font-weight: bold;
+	color: #123456;
+	background-color: #EFFFE9;
+	float: left;
+}
+.txt{
+	width: 300px;
+	height: 50px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20;
+	color: #2EC4B6;
+}
+.txt2{
+	width: 300px;
+	height: 50px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20;
+	color: #2EC4B6;
+}
+.icone1{
+	width: 56px;
+	height: 60px;
+	margin: 20px 0px 0px 120px;
+	padding: 20px;
+	float: left;
+	border: solid;
+	border-width: 1px;
+	border-color: #2EC4B6;
+	/*border-radius: 50%;*/
+}
+.icone2{
+	width: 120px;
+	height: 120px;
+	margin-top: 60px;
+	margin-left: 110px;
+	clear: left;
+	float: left;
+	opacity: 0.7;
+	border-radius: 30%;
+	overflow: hidden;
+}
+textarea{
+	width: 350px;
+	height: 300px;
+	margin: 40px;
+	float: left;
+	border:dashed;
+	border-radius: 2px;
+	border-color: #2EC4B6;
+	opacity: 0;
+}
+input[type=email]{
+	width: 300px;
+	height: 50px;
+	float: left;
+	margin: 50px;
+	border:dashed;
+	border-radius: 2px;
+	border-color: #2EC4B6;
+	opacity: 0;
+
+}
+input[type=submit]{
+	width: 300px;
+	height: 50px;
+	float: left;
+	margin: 30px 0px 0px 100px;
+	border:none;
+	background-color:#EFFFE9;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20;
+	font-weight: bold;
+	color: #2EC4B6; 
+
+}
+.side{
+	width: 250px;
+	height: 100%;
+	background-color: #555555;
+	float: left;
+	position: absolute;
+	top: 660px;
+	left: 1100px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20;
+	color: #2EC4B6;
+	padding:400px 0 20px 20px; 
+	opacity: 0.9;
+	box-shadow: 2px 6px 6px black;
+	animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes example {
+    0%   {background-color: #555555;opacity: 0.9;color: #2EC4B6;}
+    40%  {background-color:#555555; opacity: 0.9;color: #2EC4B6;}
+    50%  {background-color:#555555;opacity:0 ;color: #555555;}
+    60%  {background-color:#2EC4B6;opacity:0.9 ;color: #555555;}
+    90%  {background-color:#2EC4B6; opacity:0.9 ;color: #555555;}
+    100% {background-color: #2EC4B6; opacity: 0;color: #2EC4B6;}
+}
+aside p{
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16;
+}
+.barxx{
+  width: 100%;
+  height: 450px;
+  background:url(bax.jpg);
+  overflow:hidden;
+  position: absolute;
+  top: 1540;
+  padding-left: 2px;
+  background-attachment: fixed;
+  border-top: solid;
+	border-width: 10px;
+	border-color: #2EC4B6;
+}
+.q{
+  float: left;
+}
+.t{
+  clear: left;
+  float: left;
+}
+.foot{
+  width: 100%;
+  height: 450px;
+  background:black;
+  opacity:0.7;
+  overflow:hidden;
+  position: absolute;
+  top: 1550;
+  background-attachment: fixed;
+}
+.barre{
+  width: 650px;
+  height: 100px;
+  background:black;
+  opacity: 0.8;
+  position: absolute;
+  top: 1750;
+  background-attachment: fixed;
+  padding-left: 700px;
+}
+.social{
+  width: 90px;
+  height: 90px;
+  float: left;
+  border:transparent;
+  overflow: hidden;
+  border-width: 4px;
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-top: 5px;
+  color: white;
+  font-size: 20;
+  font-weight: bolder;
+  line-height: 90px;
+}
